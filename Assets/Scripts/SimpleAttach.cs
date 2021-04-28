@@ -6,6 +6,8 @@ using Valve.VR.InteractionSystem;
 public class SimpleAttach : MonoBehaviour
 {
     private Interactable interactable;
+    public Collider collider;
+    public bool needCollider;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,8 @@ public class SimpleAttach : MonoBehaviour
             hand.AttachObject(gameObject, grab);
             hand.HoverLock(interactable);
             hand.HideGrabHint();
+            if(needCollider)
+                collider.enabled = true;
         }
         // release
         else if(isGrabEnding)
