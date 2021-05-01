@@ -5770,11 +5770,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 933757637}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40695c7c04f69324a855b657ebbfdc16, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f32883eed859804dbb0c5fedac91496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider: {fileID: 933757641}
-  needCollider: 1
+  axisOfRotation: 2
+  childCollider: {fileID: 933757639}
+  linearMapping: {fileID: 0}
+  hoverLock: 0
+  limited: 1
+  frozenDistanceMinMaxThreshold: {x: 0.1, y: 0.2}
+  onFrozenDistanceThreshold:
+    m_PersistentCalls:
+      m_Calls: []
+  minAngle: -45
+  freezeOnMin: 0
+  onMinAngle:
+    m_PersistentCalls:
+      m_Calls: []
+  maxAngle: 45
+  freezeOnMax: 0
+  onMaxAngle:
+    m_PersistentCalls:
+      m_Calls: []
+  forceStart: 0
+  startAngle: 0
+  rotateGameObject: 1
+  debugPath: 0
+  dbgPathLimit: 50
+  debugText: {fileID: 0}
+  outAngle: 0
 --- !u!65 &933757641
 BoxCollider:
   m_ObjectHideFlags: 0
